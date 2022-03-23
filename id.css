@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 600px;
+    height: 500px;
+    margin-top: 80px;
+}
+img{
+    max-width: 100%;
+}
+.h-top {
+    background: #FD5C47;
+    font-family: fangsong;
+}
+.h-top h2 {
+    padding: 16px 10px;
+    color: white;
+}
+.h-bottom {
+    background: lightgrey;
+    padding: 0;
+    margin-top: -8px;
+}
+.details {
+    padding-top: 17px;
+}
+i.fa.fa-star {
+    color: red;
+    margin-right: 5px;
+}
