@@ -6,6 +6,10 @@
         $phone = $_POST['phone'];
         $email = $_POST['email'];
         $batch = $_POST['batch'];
+        
+        $img_name = $_FILES['upload_img']['name'];
+        $tmp_name = $_FILES['upload_img']['tmp_name'];
+        move_uploaded_file($tmp_name,"img/".$img_name);
     }
 ?>
 
@@ -33,7 +37,7 @@
                         <div class="row">
                             <div class="col-md-5">
                                 <div class="img">
-                                    <img src="./img/1.jpg" alt="">
+                                    <img src="./img/<?php if(isset($img_name)){ echo $img_name;}?>" alt="">
                                 </div>
                             </div>
                             <div class="col-md-7">
